@@ -35,9 +35,9 @@ const LoadingIndicator = () => {
     return (
         <>
             {isLoading && (
-                <LoadingContainer>
-                    <SpinnerIcon />
-                </LoadingContainer>
+              <LoadingContainer data-testid="loading-container">
+                <SpinnerIcon />
+              </LoadingContainer>
             )}
         </>
     );
