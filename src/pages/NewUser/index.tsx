@@ -43,7 +43,7 @@ const NewUserPage = () => {
         <IconButton onClick={() => goToHome()} aria-label="back">
           <HiOutlineArrowLeft size={24} />
         </IconButton>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <S.Form onSubmit={handleSubmit(onSubmit)}>
           <TextField
             {...register('name', {
               required: 'Nome é obrigatório',
@@ -83,7 +83,7 @@ const NewUserPage = () => {
             error={errors.admissionDate?.message?.toString()}
           />
           <Button>Cadastrar</Button>
-        </form>
+        </S.Form>
       </S.Card>
     </S.Container>
   );

@@ -11,6 +11,12 @@ export const Container = styled.div`
   gap: 16px;
 `;
 
+export const Form = styled.form`
+  div {
+    margin-bottom: 15px;
+  }
+`;
+
 export const Card = styled.div`
   border: 2px solid #f0f0f0;
   width: 500px;
