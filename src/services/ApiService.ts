@@ -1,5 +1,7 @@
+import { API_URL } from '../constants/envs';
+
 export class ApiService {
-    private static baseUrl = 'http://localhost:3000/';
+    private static baseUrl = API_URL;
     private static contentType = 'application/json';
 
     private static async request(url: string, method: string, data?: object) {
