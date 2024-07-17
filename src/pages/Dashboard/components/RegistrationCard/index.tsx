@@ -24,7 +24,9 @@ const RegistrationCard = (props: Props) => {
     updateRegistration(data);
   };
   
-  const handleDelete = () => deleteRegistration(props.data.id);
+  const handleDelete = () => {
+    if (props.data.id) deleteRegistration(props.data.id)
+  };
 
   const buttons = {
     approved: {

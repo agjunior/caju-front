@@ -25,7 +25,7 @@ type Props = {
   error?: string;
 } & InputHTMLAttributes<any>;
 
-const TextField = React.forwardRef((props: Props, ref) => {
+const TextField = React.forwardRef((props: Props, ref: React.Ref<HTMLInputElement>) => {
   return (
     <div>
       <label htmlFor={props.id}>{props.label}</label>

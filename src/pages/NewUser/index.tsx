@@ -51,7 +51,7 @@ const NewUserPage = () => {
             })}
             placeholder="Nome"
             label="Nome"
-            error={errors.name?.message}
+            error={errors.name?.message?.toString()}
           />
           <TextField
             {...register('email', {
@@ -62,7 +62,7 @@ const NewUserPage = () => {
             placeholder="Email"
             label="Email"
             type="email"
-            error={errors.email?.message}
+            error={errors.email?.message?.toString()}
           />
           <TextField
             {...register('cpf', {
@@ -72,7 +72,7 @@ const NewUserPage = () => {
             placeholder="CPF"
             label="CPF"
             maxLength={14}
-            error={errors.cpf?.message}
+            error={errors.cpf?.message?.toString()}
             onChange={handleCPFChange}
             value={watch('cpf')}
           />
@@ -80,7 +80,7 @@ const NewUserPage = () => {
             {...register('admissionDate', { required: 'Data de admissão é obrigatória' })}
             label="Data de admissão"
             type="date"
-            error={errors.admissionDate?.message}
+            error={errors.admissionDate?.message?.toString()}
           />
           <Button>Cadastrar</Button>
         </form>
