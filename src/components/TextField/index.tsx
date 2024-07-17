@@ -25,14 +25,14 @@ type Props = {
   error?: string;
 } & InputHTMLAttributes<any>;
 
-const TextField = (props: Props) => {
+const TextField = React.forwardRef((props: Props, ref) => {
   return (
     <div>
       <label htmlFor={props.id}>{props.label}</label>
-      <Input {...props} />
+      <Input ref={ref} {...props} />
       <span style={{fontSize: 12, color: 'red'}}>{props.error}</span>
     </div>
   );
-};
+});
 
 export default TextField;
