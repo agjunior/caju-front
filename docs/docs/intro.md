@@ -27,7 +27,7 @@ npm install
 
 ## Execute a aplicação localmente
 
-Para rodar a aplicação localmente, precisamos subir o banco de dados local de exemplo, com o serguinte comando:
+Para rodar a aplicação localmente, precisamos subir o banco de dados local de exemplo, com o seguinte comando:
 
 ```bash
 npm run init:db
@@ -36,7 +36,7 @@ npm run init:db
 Em outro terminal, inicie o projeto:
 
 ```bash
-npm run start
+npm run dev
 ```
 
-Você pode acessar a aplicação digitando http://localhost:3000 no seu navegador.
+Você pode acessar a aplicação acessando http://localhost:3001 no seu navegador.
