@@ -11,12 +11,8 @@ const useApi = (requestFunction: any, needConfirmation:boolean = false) => {
     startLoading();
 
     try {
-      console.log('useApi', requestFunction);
-      console.log('needConfirmation', needConfirmation);
       const response = await requestFunction(...params);
-      console.log('response', response);
       toast.success('Operação realizada com sucesso!');
-
       return response;
     } catch (error) {
       toast.error('Ocorreu um erro na operação.');

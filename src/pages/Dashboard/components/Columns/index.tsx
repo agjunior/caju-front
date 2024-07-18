@@ -15,7 +15,6 @@ type Props = {
 
 const Collumns = (props: Props) => {
 
-  console.log(props.registrations);
   return (
     <S.Container>
       {allColumns.map((collum) => {

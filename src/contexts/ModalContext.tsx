@@ -24,7 +24,6 @@ export const ModalProvider = ({ children }: { children: React.ReactNode }) => {
     const openModal = useCallback((onConfirmCallback: () => void, message?: string) => {
         if (message) setMessage(message);
         setOnConfirm(() => onConfirmCallback);
-        console.log('openModal', onConfirmCallback);
         setIsOpen(true);
     }, []);
 
