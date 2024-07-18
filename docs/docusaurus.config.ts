@@ -11,7 +11,7 @@ const config: Config = {
   baseUrl: '/',
 
   organizationName: 'agjunior', // Usually your GitHub org/user name.
-  projectName: 'caju-teste', // Usually your repo name.
+  projectName: 'caju-front', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -55,7 +55,7 @@ const config: Config = {
           label: 'Docs',
         },
         {
-          href: 'https://github.com/agjunior/caju-teste',
+          href: 'https://github.com/agjunior/caju-front',
           label: 'GitHub',
           position: 'right',
         },
